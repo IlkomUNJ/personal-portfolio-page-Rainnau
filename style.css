@@ -1,19 +1,74 @@
 body {
+    height: 100%;
+    margin: 0;
+
+    min-height: 100vh;
     background-image: url('images/DW_AlBUM_BG.png');
-    background-size: 1366px 768px;
     background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "prev_button image next_button"
+    "textbox textbox textbox";
+
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto auto;
+    
+    gap: 25px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.header {
+    grid-area: header;
+    margin-top: 25px;
+}
+
+
+.prev {
+    grid-area: prev_button;
+}
+
+
+.next {
+    grid-area: next_button;
+}
+
 
 button {
     border: 5px solid white;
     outline: 2px solid black;
     background-color: black;
 
+    height: max-content;
     margin-left: 50px;
     margin-right: 50px;
     padding: 7;
 }
 
+
+.imagebox {
+    grid-area: image;
+
+    border: 5px solid white;
+    outline: 2px solid black;
+
+    background-color: black;
+}
+
+
+.description {
+    grid-area: textbox;
+    margin-bottom: 25px;
+}
 
 @keyframes flip {
     0% {opacity: 0.0;}
@@ -28,36 +83,37 @@ button {
 }
 
 
-.flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.dateText {
+    max-width: fit-content;
+    margin-bottom: 5px;
 }
 
-.grid-center {
-    display: grid;
-    place-items: center;
-}
 
-.textbox {
-    border: 5px solid white;
-    outline: 2px solid black;
-    padding-left: 20px;
-    padding-right: 20px;
-    
+.descriptionText {
     min-width: 750px;
     max-width: 750px;
     min-height: 150px;
     /* max-height: 150px; */
     
+    overflow-wrap: break-word;
+}
+
+
+.textbox {
+    border: 5px solid white;
+    outline: 2px solid black;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
     font-family: arial,sans-serif;
     text-align: left;
     font-size: 25px;
-    overflow-wrap: break-word;
 
     color: white;
     background-color: black;
 }
+
 
 .photos {
     white-space: pre-line;

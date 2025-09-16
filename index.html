@@ -8,28 +8,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="flex-center">
-        <button onclick="prev_photo()">
+    <div class="grid-container">
+        <div class="header">
+            <div class="textbox titleText">
+                <p>My Personal Blog</p>
+            </div>
+        </div>
+
+        <button class="prev" onclick="prev_photo()">
             <img src="images/hand-point-left.png">
         </button>
-
-        <div class="image">
+    
+        <div class="imagebox">
             <img id="album" class="photo" src="images/photos/photo_01.jpeg">
         </div>
-
-        <button onclick="next_photo()">
+    
+        <button class="next" onclick="next_photo()">
             <img src="images/hand-point-right.png">
         </button>
-    </div>
 
-    <div class="grid-center">
-        <div class="textbox">
-            <p id="photoText" class="photos">Hello! ^_^
-        I'm Ahmad Hanif Naufal Jamil, but you can call me by Hanif!
-        Nice to meet you! ( ˶ˆᗜˆ˵ )
-        Feel free to take a glimpse of my life by pressing the buttons beside the picture!</p>
+        <div class="description">
+            <div class="textbox dateText">
+                <p id="photoDate" class="dates">Welcome!</p>
+            </div>
+            <div class="textbox descriptionText">
+                <p id="photoText" class="photos">Hello! ^_^
+            I'm Ahmad Hanif Naufal Jamil, but you can call me by Hanif!
+            Nice to meet you! ( ˶ˆᗜˆ˵ )
+            Feel free to take a glimpse of my life by pressing the buttons beside the picture!</p>
+            </div>
         </div>
     </div>
+
 
     <script src="photo_change.js"></script>
 </body>
