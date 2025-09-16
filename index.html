@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-center">
+        <button onclick="prev_photo()">
+            <img src="images/hand-point-left.png">
+        </button>
+
+        <div class="image">
+            <img id="album" class="photo" src="images/photos/photo_01.jpeg">
+        </div>
+
+        <button onclick="next_photo()">
+            <img src="images/hand-point-right.png">
+        </button>
+    </div>
+
+    <div class="grid-center">
+        <div class="textbox">
+            <p id="photoText" class="photos">Hello! ^_^
+        I'm Ahmad Hanif Naufal Jamil, but you can call me by Hanif!
+        Nice to meet you! ( ˶ˆᗜˆ˵ )
+        Feel free to take a glimpse of my life by pressing the buttons beside the picture!</p>
+        </div>
+    </div>
+
+    <script src="photo_change.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+body {
+    background-image: url('images/DW_AlBUM_BG.png');
+    background-size: 1366px 768px;
+    background-repeat: no-repeat;
+}
+
+button {
+    border: 5px solid white;
+    outline: 2px solid black;
+    background-color: black;
+
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 7;
+}
+
+
+@keyframes flip {
+    0% {opacity: 0.0;}
+    100% {opacity: 1;}
+}
+
+
+.photo {
+    height: 420px;
+    animation: flip;
+    animation-duration: 0.5s;
+}
+
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-center {
+    display: grid;
+    place-items: center;
+}
+
+.textbox {
+    border: 5px solid white;
+    outline: 2px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    min-width: 750px;
+    max-width: 750px;
+    min-height: 150px;
+    /* max-height: 150px; */
+    
+    font-family: arial,sans-serif;
+    text-align: left;
+    font-size: 25px;
+    overflow-wrap: break-word;
+
+    color: white;
+    background-color: black;
+}
+
+.photos {
+    white-space: pre-line;
+}
