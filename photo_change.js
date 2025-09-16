@@ -10,12 +10,25 @@ const textObj = {
         Nice to meet you! ( ˶ˆᗜˆ˵ )\n \
         Feel free to take a glimpse of my life by pressing the buttons beside the picture!",
 
-        "I am a student at State University of Jakarta,\n \
-        I got accepted here by SNBT with a score of 687.2 and \n \
-        I am studying Computer Science along with my lovely friends in the picture!",
+        "I am a student at State University of Jakarta.\n \
+        I got accepted here by SNBT with a score of 687.2 and I am studying Computer Science along with my lovely friends in the picture!",
 
         "This is me and my friends welcoming new students to Computer Science at UNJ.\n \
-        I got assigned as the 2nd Secretary, it was tiring but I learned a lot through it!"
+        I got assigned as the 2nd Secretary, it was tiring but I learned a lot through it!",
+
+        "I graduated from SMAN 1 Babelan, I met some really nice people, forged some strong friendships, and I wont forget the lessons I've learned there!",
+
+        "In my second year of senior high school I was trusted to be the leader of their English Club. \n \
+        I made many mistakes, but looking back I never regretted becoming the leader.",
+
+        "This is me and the leader of another school organization. We decided to collab and host a Language Fest Event for the entire school!\n \
+        It held 7 competitions such as speech, story telling, and many more!",
+
+        "One of my hobbies is making pixel art, I've started this hobby since 2021 and I am consistently learning until this day!\n \
+        If you'd like to see more of my work, head over to my art Instagram account: <a href=\"https://www.instagram.com/pancakemewo/?hl=id\">@pancakemewo</a>",
+        
+        "One of my hobbies is developing games, I've started this hobby since 2022. It's sometimes a headache but overall I find it really fun!\n \
+        This is a sneak peek of a card game I'm working on, it's still in an early version but be on the lookout for it!"
     ]
 }
 
@@ -28,7 +41,7 @@ function get_text() {
 function prev_photo() {
     switch (photoNum) {
         case '01':
-            photoNum = 18;
+            photoNum = 8;
             break;
         default:
             photoNum--
@@ -46,7 +59,7 @@ function prev_photo() {
 
 function next_photo() {
     switch (photoNum) {
-        case '18':
+        case '08':
             photoNum = 1;
             break;
         default:
