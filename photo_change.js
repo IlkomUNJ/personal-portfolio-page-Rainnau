@@ -70,6 +70,7 @@ function prev_photo() {
         photoNum = `0${photoNum}`
     } else {photoNum = photoNum.toString()}
 
+    page_turn.currentTime = 0;
     page_turn.play()
 
     img.src = `${photoPath[0]}/${photoPath[1]}/${photoName + photoNum}.jpeg`
